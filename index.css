@@ -46,8 +46,69 @@
 }
 
 .main {
+    
+}
+
+#features {
+    height: 350px;
     padding-top: 250px;
 }
+
+.feature {
+    display: flex;
+    margin: 40px;
+}
+
+.service {
+    margin: 0 10px;
+}
+
+.service p {
+    font-style: italic;
+}
+
+#our-product {
+   height: 400px;
+}
+
+iframe {
+    display: block;
+    margin: 35px auto;
+}
+
+#prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price {
+    width: 250px;
+    height: 300px;
+
+    margin:  15px 0;
+    text-align-last: center;
+    border: 1px solid #5c5c5c;
+}
+
+.price h3, h4 {
+    padding: 15px 0;
+}
+
+.price .description {
+    padding: 15px 40px;    
+    line-height: 30px;
+    text-align: center;
+}
+
+.price input {
+    width: 100px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+
+
 
 @media all and (min-width: 650px) {
 
@@ -74,5 +135,10 @@
 
     #nav-bar ul li:hover {
         border-top: 1px solid #5c5c5c; 
+    }
+
+    #prices {
+        display: flex;
+        flex-direction: row;
     }
 }
