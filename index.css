@@ -45,10 +45,6 @@
     transition: all 0.2s ease-in-out;
 }
 
-.main {
-    
-}
-
 #features {
     height: 350px;
     padding-top: 250px;
@@ -69,6 +65,7 @@
 
 #our-product {
    height: 400px;
+   padding-top: 150px;
 }
 
 iframe {
@@ -80,15 +77,16 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 150px;
 }
 
 .price {
     width: 250px;
     height: 300px;
-
     margin:  15px 0;
     text-align-last: center;
-    border: 1px solid #5c5c5c;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px -1px #5c5c5c;
 }
 
 .price h3, h4 {
@@ -107,10 +105,67 @@ iframe {
     font-size: 1.1rem;
 }
 
+#contact-us {
+    height: 300px;
+    padding-top: 150px;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
 
+input {
+    height: 40px;
+    border: 2px solid #919191;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    text-align: center;
+}
 
-@media all and (min-width: 650px) {
+input[type='email'] {
+    background: #cccccc;
+}
+
+input[type='submit'] {
+    text-transform: uppercase;
+    line-height: 1rem;
+}
+
+form input[type='submit'] {
+    width: 150px;
+    margin: auto;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 80px;
+}
+
+footer .container ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+    padding: 15px;
+}
+
+@media all and (min-width: 750px) {
 
     .container {
         width: 80%;
@@ -137,8 +192,19 @@ iframe {
         border-top: 1px solid #5c5c5c; 
     }
 
-    #prices {
+    #prices .container{
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .price {
+        margin: 10px;
+        height: 350px;
+    }
+
+    form {
+        max-width: 500px;
+        margin: auto;
     }
 }
