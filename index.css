@@ -18,7 +18,7 @@
     position: fixed;
     width: 100%;
     justify-content: space-between;
-    box-shadow: 5px 0px 5px 1px rgb(148, 148, 148);;
+    box-shadow: 5px 0px 5px 1px #1870a3;
 }
 
 #nav-bar ul {
@@ -29,7 +29,7 @@
     width: 70%;
     list-style: none;
     margin: auto;
-    border-top: 1px solid #e1e1e1; 
+    border-top: 1px solid #1870a3; 
 }
 
 .nav-link {    
@@ -37,7 +37,7 @@
     text-decoration: none;
     display: block;
     text-align: center;
-    color: rgb(82, 80, 80);
+    color:  #1870a3;
 }
 
 .nav-link:hover {
@@ -57,10 +57,19 @@
 
 .service {
     margin: 0 10px;
+    color: #1870a3;
+}
+
+.feature i{
+    color: #1870a3;
 }
 
 .service p {
     font-style: italic;
+}
+
+.service h3 {
+    padding-left: 15px;
 }
 
 #our-product {
@@ -84,9 +93,19 @@ iframe {
     width: 250px;
     height: 300px;
     margin:  15px 0;
+    overflow: hidden;
     text-align-last: center;
     border-radius: 1rem;
-    box-shadow: 1px 1px 10px -1px #5c5c5c;
+    box-shadow: 1px 1px 10px -1px #1870a3;
+}
+
+.price h4 {
+    background-color: #1870a3;
+    color: #fff;
+}
+
+.price h3 {
+    color: #1870a3;
 }
 
 .price h3, h4 {
@@ -143,7 +162,11 @@ footer .container {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
+    width: 100%;
     height: 80px;
+    padding: 20px 0;
+    color: white;
+    background-color: #1870a3e0;
 }
 
 footer .container ul {
@@ -158,6 +181,7 @@ li {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 p {
@@ -190,6 +214,11 @@ p {
 
     #nav-bar ul li:hover {
         border-top: 1px solid #5c5c5c; 
+    }
+
+    #features .container {
+        width: 60%;
+        margin: auto;
     }
 
     #prices .container{
